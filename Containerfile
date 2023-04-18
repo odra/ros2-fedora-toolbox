@@ -1,4 +1,6 @@
-FROM registry.fedoraproject.org/fedora-toolbox:latest
+ARG FEDORA_VERSION=38
+
+FROM registry.fedoraproject.org/fedora-toolbox:${FEDORA_VERSION}
 
 ARG ROS_VERSION=rolling
 
